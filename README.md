@@ -70,7 +70,7 @@ The repo does not allow for database feature flexibility, i.e. features have bee
 ```
 
 Also, this repo tracks the `.env` file so make sure you remove it from history
-or start a new repo. Once completed, populate files' properties.
+or start a new repo. Once completed, populate the properties of the file.
 You will need the following:
 - Bybit API & Secret
 - Notion API
