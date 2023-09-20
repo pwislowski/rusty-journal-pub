@@ -1,0 +1,53 @@
+use serde::{Deserialize, Serialize};
+use std::fmt::Debug;
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct TradeRecord {
+    pub symbol: String,
+    #[serde(alias = "execFee")]
+    pub exec_fee: f64,
+    #[serde(alias = "execId")]
+    pub exec_id: String,
+    #[serde(alias = "execPrice")]
+    pub exec_price: f64,
+    #[serde(alias = "execQty")]
+    pub exec_qty: f64,
+    #[serde(alias = "execType")]
+    pub exec_type: String,
+    #[serde(alias = "feeRate")]
+    pub fee_rate: String,
+    #[serde(alias = "lastLiquidityInd")]
+    pub last_liquidity_ind: String,
+    #[serde(alias = "leavesQty")]
+    pub leaves_qty: f64,
+    #[serde(alias = "orderId")]
+    pub order_id: String,
+    #[serde(alias = "orderLinkId")]
+    pub order_link_id: String,
+    #[serde(alias = "orderPrice")]
+    pub order_price: f64,
+    #[serde(alias = "orderQty")]
+    pub order_qty: f64,
+    #[serde(alias = "orderType")]
+    pub order_type: String,
+    #[serde(alias = "stopOrderType")]
+    pub stop_order_type: String,
+    pub side: String,
+    #[serde(alias = "execTime")]
+    pub exec_time: u64,
+    #[serde(alias = "closedSize")]
+    pub closed_size: f64,
+    pub iv: String,
+    #[serde(alias = "blockTradeId")]
+    pub block_trade_id: String,
+    #[serde(alias = "markPrice")]
+    pub mark_price: f64,
+    #[serde(alias = "markIv")]
+    pub mark_iv: String,
+    #[serde(alias = "underlyingPrice")]
+    pub underlying_price: String,
+    #[serde(alias = "indexPrice")]
+    pub index_price: String,
+    #[serde(alias = "isMaker")]
+    pub is_maker: bool,
+}
